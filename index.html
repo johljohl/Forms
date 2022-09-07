@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      label,
+      input,
+      textarea {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+
+    <title>Product Manager</title>
+  </head>
+  <body>
+    <h1>Ny produkt</h1>
+    <form>
+      <label for="fname">Namn</label>
+      <input type="text" id="fname" name="fname" maxlength="50" />
+      <label for="beskrivning">Beskrivning</label>
+      <textarea name="" id="beskrivning" cols="30" rows="10"></textarea>
+      <label for="img">Bild</label>
+      <input type="file" id="img" name="img" accept="image/*" />
+      <label for="date">Publiseringsdatum</label>
+      <input type="date" name="Publiseringsdatum" id="date" >
+      <label for="number">Pris</label>
+      <input type="number" name="Pris" id="number">
+      <label for="text">Artikelnummer</label>
+      <input type="text" placeholder="XXX-XXYY">
+      <label for="select">Kategorier</label>
+      <select multiple="multiple">
+        <option> Välj årstid här! </option>
+        <option value="var"> Vår </option>
+        <option value="sommar"> Sommar </option>
+        <option value="host"> Höst </option>
+        <option value="vinter"> Vinter </option>
+        </select>
+        <input type="submit" value="Lägg till">
+    </form>
+  </body>
+</html>
