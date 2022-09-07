@@ -25,20 +25,26 @@
       <label for="img">Bild</label>
       <input type="file" id="img" name="img" accept="image/*" />
       <label for="date">Publiseringsdatum</label>
-      <input type="date" name="Publiseringsdatum" id="date" >
+      <input type="date" name="Publiseringsdatum" id="date" />
       <label for="number">Pris</label>
-      <input type="number" name="Pris" id="number">
+      <input type="number" name="Pris" id="number" />
       <label for="text">Artikelnummer</label>
-      <input type="text" placeholder="XXX-XXYY">
+      <input
+        type="text"
+        id="text"
+        placeholder="XXX-XXYY"
+        pattern="[A-Ö]{3}-[A-Ö]{2}[0-9]{2}$"
+        title="Artikelnummret måste bestå av bokstäver och siffror exemple AAA-AA23"
+      />
       <label for="select">Kategorier</label>
-      <select multiple="multiple">
-        <option> Välj årstid här! </option>
-        <option value="var"> Vår </option>
-        <option value="sommar"> Sommar </option>
-        <option value="host"> Höst </option>
-        <option value="vinter"> Vinter </option>
-        </select>
-        <input type="submit" value="Lägg till">
+      <select type="select" name="Kategorier" id="select" size="2" multiple>
+        <option>Välj årstid här!</option>
+        <option value="var">Vår</option>
+        <option value="sommar">Sommar</option>
+        <option value="host">Höst</option>
+        <option value="vinter">Vinter</option>
+      </select>
+      <input type="submit" value="Lägg till" />
     </form>
   </body>
 </html>
